@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Démonstration d’un site web pour salle de sport moderne : cours, coachs, tarifs, témoignages et réservation." />
+    <title>Forge Fit | Démonstration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="demo-banner">Site de démonstration réalisé par [mon nom]</div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Accueil salle de sport">
+          <span class="brand-mark">FF</span>
+          <span>Forge Fit</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Navigation salle de sport">
+          <a href="#about">À propos</a>
+          <a href="#programs">Cours</a>
+          <a href="#coaches">Coachs</a>
+          <a href="#pricing">Tarifs</a>
+          <a href="#reviews">Avis</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="header-cta" href="#pricing">Rejoindre</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Force • énergie • résultats</span>
+            <h1>Rebâtis ton corps. Renforce ton énergie.</h1>
+            <p>
+              Des coachs motivants, des cours dynamiques et un cadre professionnel pour t’accompagner dans ta progression.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#pricing">Essai gratuit</a>
+              <a class="btn btn-light" href="#programs">Voir les cours</a>
+            </div>
+            <ul class="hero-pills">
+              <li>Coach personnel</li>
+              <li>Cours collectifs</li>
+              <li>Abonnements flexibles</li>
+            </ul>
+          </div>
+
+          <div class="hero-card reveal">
+            <div class="athlete-panel">
+              <div class="panel-top">
+                <span class="badge">Aujourd’hui</span>
+                <strong>Bootcamp 18h30</strong>
+              </div>
+              <div class="panel-list">
+                <div>
+                  <span>Coach</span>
+                  <strong>Yasmine</strong>
+                </div>
+                <div>
+                  <span>Places</span>
+                  <strong>12 restantes</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container about-grid">
+          <div class="image-block reveal">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" alt="Salle de sport moderne avec équipement et coach" loading="lazy" width="1200" height="900" />
+          </div>
+
+          <div class="content-block reveal">
+            <span class="eyebrow accent">À propos</span>
+            <h2>Un espace de performance pensé pour chaque niveau.</h2>
+            <p>
+              Forge Fit propose un environnement motivant, performant et bienveillant où chacun peut progresser à son rythme.
+              Que tu sois débutant ou sportif confirmé, tu trouveras un programme adapté à tes objectifs.
+            </p>
+
+            <div class="stats-grid">
+              <div>
+                <strong>12k+</strong>
+                <span>Membres</span>
+              </div>
+              <div>
+                <strong>30+</strong>
+                <span>Cours/semaine</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Note</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section programs" id="programs">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow accent">Cours</span>
+            <h2>Des séances variées pour progresser</h2>
+          </div>
+
+          <div class="program-grid">
+            <article class="program-card reveal">
+              <div class="program-icon">01</div>
+              <h3>CrossFit</h3>
+              <p>Sessions intenses et motivantes pour améliorer force, endurance et explosivité.</p>
+            </article>
+
+            <article class="program-card reveal">
+              <div class="program-icon">02</div>
+              <h3>Cardio</h3>
+              <p>Travail sur l’endurance et la puissance avec entraînements dynamiques.</p>
+            </article>
+
+            <article class="program-card reveal">
+              <div class="program-icon">03</div>
+              <h3>Musculation</h3>
+              <p>Programme de renforcement musculaire avec accompagnement technique.</p>
+            </article>
+
+            <article class="program-card reveal">
+              <div class="program-icon">04</div>
+              <h3>Yoga & mobilité</h3>
+              <p>Travail de souplesse, équilibre et récupération pour mieux performer.</p>
+            </article>
+
+            <article class="program-card reveal">
+              <div class="program-icon">05</div>
+              <h3>Boxing</h3>
+              <p>Entraînements complets alliant cardio, technique et condition physique.</p>
+            </article>
+
+            <article class="program-card reveal">
+              <div class="program-icon">06</div>
+              <h3>HIIT</h3>
+              <p>Des séances courtes mais intenses pour brûler calories et gagner en énergie.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section coaches" id="coaches">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow accent">Coachs</span>
+            <h2>Des entraîneurs motivants et spécialisés</h2>
+          </div>
+
+          <div class="coaches-grid">
+            <article class="coach-card reveal">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80" alt="Coach de salle de sport en train d’encadrer" loading="lazy" width="900" height="1000" />
+              <div class="coach-body">
+                <h3>Rayan Haddad</h3>
+                <span>Coach performance</span>
+                <p>Composition de programmes personnalisés et accompagnement du quotidien.</p>
+              </div>
+            </article>
+
+            <article class="coach-card reveal">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80" alt="Coach femme impliquée dans le suivi sportif" loading="lazy" width="900" height="1000" />
+              <div class="coach-body">
+                <h3>Lina Messaoudi</h3>
+                <span>Coach cardio & fitness</span>
+                <p>Accompagnement motivant pour progresser en douceur ou en intensité.</p>
+              </div>
+            </article>
+
+            <article class="coach-card reveal">
+              <img src="https://images.unsplash.com/photo-1541534401786-2077eed87a74?auto=format&fit=crop&w=900&q=80" alt="Coach de musculation en salle" loading="lazy" width="900" height="1000" />
+              <div class="coach-body">
+                <h3>Amine Belkacem</h3>
+                <span>Coach musculation</span>
+                <p>Programme de renforcement, posture, technique et progression continue.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing">
+        <div class="container pricing-grid">
+          <div class="pricing-copy reveal">
+            <span class="eyebrow accent">Tarifs</span>
+            <h2>Des formules flexibles selon tes objectifs</h2>
+            <p>Commence aujourd’hui avec une formule qui t’accompagne sans pression.</p>
+
+            <div class="pricing-list">
+              <div class="price-card highlight">
+                <span class="plan">Starter</span>
+                <strong>299 MAD</strong>
+                <ul>
+                  <li>Accès illimité</li>
+                  <li>2 cours collectifs/mois</li>
+                  <li>Coach disponible</li>
+                </ul>
+              </div>
+
+              <div class="price-card">
+                <span class="plan">Performance</span>
+                <strong>599 MAD</strong>
+                <ul>
+                  <li>Accès illimité</li>
+                  <li>Cours illimités</li>
+                  <li>Suivi personnalisé</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <form class="pricing-form reveal" action="#" method="post">
+            <h3>Débuter gratuitement</h3>
+            <label>
+              <span>Nom</span>
+              <input type="text" name="name" placeholder="[REPLACE: Votre nom]" />
+            </label>
+
+            <label>
+              <span>Téléphone</span>
+              <input type="tel" name="phone" placeholder="[REPLACE: +212 6 ...]" />
+            </label>
+
+            <label>
+              <span>Objectif</span>
+              <select name="objectif">
+                <option>Perte de poids</option>
+                <option>Prise de masse</option>
+                <option>Endurance</option>
+                <option>Mobilité</option>
+              </select>
+            </label>
+
+            <button type="submit" class="btn btn-primary full-width">Réserver mon essai</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow accent">Témoignages</span>
+            <h2>Ils ont transformé leur énergie</h2>
+          </div>
+
+          <div class="testimonial-slider reveal">
+            <button class="slider-btn prev" type="button" aria-label="Précédent">‹</button>
+
+            <div class="testimonial-track">
+              <blockquote class="testimonial active">
+                <p>“J’ai enfin trouvé une salle motivante, bien organisée et des coachs qui m’aident vraiment à avancer.”</p>
+                <footer>
+                  <strong>[REPLACE: témoignage réel]</strong>
+                  <span>Membre</span>
+                </footer>
+              </blockquote>
+
+              <blockquote class="testimonial">
+                <p>“Le cadre est excellent et les cours sont très bien encadrés. J’ai gagné en confiance et en énergie.”</p>
+                <footer>
+                  <strong>[REPLACE: témoignage réel]</strong>
+                  <span>Abonné</span>
+                </footer>
+              </blockquote>
+            </div>
+
+            <button class="slider-btn next" type="button" aria-label="Suivant">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section map" id="contact">
+        <div class="container map-grid">
+          <div class="map-card reveal">
+            <iframe title="Carte de la salle de sport" src="https://www.google.com/maps?q=Casablanca%20Morocco&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="contact-card reveal">
+            <span class="eyebrow accent">Contact</span>
+            <h2>Rejoins-nous pour une nouvelle dynamique</h2>
+            <ul>
+              <li><strong>Adresse :</strong> [REPLACE: Avenue ..., Casablanca]</li>
+              <li><strong>Téléphone :</strong> [REPLACE: +212 6 00 00 00 00]</li>
+              <li><strong>Email :</strong> [REPLACE: hello@forgefit.ma]</li>
+              <li><strong>Instagram :</strong> [REPLACE: @forgefit]</li>
+            </ul>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="https://wa.me/[REPLACE:212600000000]?text=[REPLACE:Bonjour%20je%20souhaite%20réserver%20un%20essai%20gratuit]" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a class="btn btn-outline" href="mailto:[REPLACE:hello@forgefit.ma]">Email</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="#top" class="brand footer-brand" aria-label="Accueil salle de sport">
+            <span class="brand-mark">FF</span>
+            <span>Forge Fit</span>
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#programs">Cours</a>
+          <a href="#coaches">Coachs</a>
+          <a href="#pricing">Tarifs</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/[REPLACE:212600000000]?text=[REPLACE:Bonjour%20je%20souhaite%20réserver%20un%20essai%20gratuit]" target="_blank" rel="noopener noreferrer" aria-label="Réserver un essai via WhatsApp">WhatsApp</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

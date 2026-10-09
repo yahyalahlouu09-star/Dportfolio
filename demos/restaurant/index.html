@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Site de démonstration pour un restaurant moderne : menu, réservation, galerie de photos, horaires et contact WhatsApp." />
+    <title>Le Jardin | Restaurant de démonstration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="demo-banner">Site de démonstration réalisé par [mon nom]</div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Accueil restaurant">
+          <span class="brand-mark">LJ</span>
+          <span>Le Jardin</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Navigation du restaurant">
+          <a href="#story">À propos</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Galerie</a>
+          <a href="#reservation">Réservation</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="header-cta" href="#reservation">Réserver</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Cuisine maison • Ambiance élégante</span>
+            <h1>Une table, une cuisine, une expérience mémorable.</h1>
+            <p>
+              Découvrez des plats généreux, préparés avec des ingrédients frais et servis dans une atmosphère chaleureuse.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#reservation">Réservez maintenant</a>
+              <a class="btn btn-light" href="#menu">Voir le menu</a>
+            </div>
+            <ul class="hero-meta">
+              <li>Ouvert tous les jours</li>
+              <li>Parking gratuit</li>
+              <li>Commandes à emporter</li>
+            </ul>
+          </div>
+
+          <div class="hero-card reveal">
+            <div class="booking-card">
+              <div class="booking-head">
+                <span class="badge">Réservation</span>
+                <strong>Soirée spéciale</strong>
+              </div>
+              <div class="booking-info">
+                <div>
+                  <span>Date</span>
+                  <strong>Vendredi 20h</strong>
+                </div>
+                <div>
+                  <span>Table</span>
+                  <strong>Terrasse</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story" id="story">
+        <div class="container story-grid">
+          <div class="story-image reveal">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" alt="Cuisine de restaurant moderne avec assiettes et préparation" loading="lazy" width="1200" height="900" />
+          </div>
+
+          <div class="story-content reveal">
+            <span class="eyebrow accent">Notre histoire</span>
+            <h2>Un lieu pensé pour les repas en famille, les réunions et les moments chaleureux.</h2>
+            <p>
+              Depuis plusieurs années, Le Jardin propose une cuisine inspirée des saveurs du terroir avec une touche contemporaine.
+              Chaque plat est préparé avec soin pour offrir une expérience gourmande et élégante.
+            </p>
+            <div class="story-stats">
+              <div>
+                <strong>12+</strong>
+                <span>Années d’expérience</span>
+              </div>
+              <div>
+                <strong>2500+</strong>
+                <span>Clients satisfaits</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Note moyenne</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow accent">Menu</span>
+            <h2>Des saveurs à partager</h2>
+          </div>
+
+          <div class="menu-tabs reveal" aria-label="Catégories du menu">
+            <button class="tab-btn active" type="button" data-tab="starters">Entrées</button>
+            <button class="tab-btn" type="button" data-tab="main">Plats</button>
+            <button class="tab-btn" type="button" data-tab="desserts">Desserts</button>
+            <button class="tab-btn" type="button" data-tab="drinks">Boissons</button>
+          </div>
+
+          <div class="menu-grid">
+            <article class="menu-item reveal" data-category="starters">
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Salade printanière garnie de légumes frais" loading="lazy" width="900" height="700" />
+              <div class="menu-body">
+                <div class="menu-head">
+                  <h3>Salade verbena</h3>
+                  <span>48 MAD</span>
+                </div>
+                <p>Tomates, roquette, avocat, feta et vinaigrette maison.</p>
+              </div>
+            </article>
+
+            <article class="menu-item reveal" data-category="starters">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Bruschetta au fromage et légumes grillés" loading="lazy" width="900" height="700" />
+              <div class="menu-body">
+                <div class="menu-head">
+                  <h3>Bruschetta grill</h3>
+                  <span>52 MAD</span>
+                </div>
+                <p>Toast au pain artisanal, tomates confites et basilic.</p>
+              </div>
+            </article>
+
+            <article class="menu-item reveal" data-category="main">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Plat principal de poisson avec légumes et pommes de terre" loading="lazy" width="900" height="700" />
+              <div class="menu-body">
+                <div class="menu-head">
+                  <h3>Filet de dorade</h3>
+                  <span>120 MAD</span>
+                </div>
+                <p>Poisson grillé, légumes de saison et purée légère.</p>
+              </div>
+            </article>
+
+            <article class="menu-item reveal" data-category="main">
+              <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80" alt="Assiette de viande avec garniture et sauce" loading="lazy" width="900" height="700" />
+              <div class="menu-body">
+                <div class="menu-head">
+                  <h3>Entrecôte grillée</h3>
+                  <span>145 MAD</span>
+                </div>
+                <p>Viande tendre, pommes sautées et sauce au poivre.</p>
+              </div>
+            </article>
+
+            <article class="menu-item reveal" data-category="desserts">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80" alt="Dessert au chocolat et fruits" loading="lazy" width="900" height="700" />
+              <div class="menu-body">
+                <div class="menu-head">
+                  <h3>Fondant chocolat</h3>
+                  <span>42 MAD</span>
+                </div>
+                <p>Chocolat noir gourmand, glace vanille et zestes d’orange.</p>
+              </div>
+            </article>
+
+            <article class="menu-item reveal" data-category="desserts">
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80" alt="Pâtisserie et dessert doré sur table" loading="lazy" width="900" height="700" />
+              <div class="menu-body">
+                <div class="menu-head">
+                  <h3>Crème brûlée</h3>
+                  <span>38 MAD</span>
+                </div>
+                <p>Crème à la vanille et croquant caramel maison.</p>
+              </div>
+            </article>
+
+            <article class="menu-item reveal" data-category="drinks">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Cocktail de fruits frais en verre" loading="lazy" width="900" height="700" />
+              <div class="menu-body">
+                <div class="menu-head">
+                  <h3>Mocktail maison</h3>
+                  <span>35 MAD</span>
+                </div>
+                <p>Boisson rafraîchissante aux agrumes et basilic.</p>
+              </div>
+            </article>
+
+            <article class="menu-item reveal" data-category="drinks">
+              <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2e6?auto=format&fit=crop&w=900&q=80" alt="Verre de jus frais et citron vert" loading="lazy" width="900" height="700" />
+              <div class="menu-body">
+                <div class="menu-head">
+                  <h3>Jus du jour</h3>
+                  <span>28 MAD</span>
+                </div>
+                <p>Jus de fruits frais, pressé sur place.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow accent">Galerie</span>
+            <h2>Un cadre qui donne envie de rester</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <button class="gallery-item reveal" type="button" data-image="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80" aria-label="Voir la photo de l’intérieur du restaurant">
+              <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="Intérieur du restaurant avec tables et lumière douce" loading="lazy" width="900" height="700" />
+            </button>
+
+            <button class="gallery-item reveal" type="button" data-image="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=80" aria-label="Voir la photo de la terrasse du restaurant">
+              <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80" alt="Terrasse du restaurant avec vue extérieure" loading="lazy" width="900" height="700" />
+            </button>
+
+            <button class="gallery-item reveal" type="button" data-image="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" aria-label="Voir la photo de plat servi au restaurant">
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" alt="Plat servi sur une table élégante" loading="lazy" width="900" height="700" />
+            </button>
+
+            <button class="gallery-item reveal" type="button" data-image="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" aria-label="Voir la photo de la salle du restaurant">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Salle principale du restaurant moderne" loading="lazy" width="900" height="700" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reservation-section" id="reservation">
+        <div class="container reservation-grid">
+          <div class="reservation-copy reveal">
+            <span class="eyebrow accent">Réservation</span>
+            <h2>Réservez votre table en quelques secondes</h2>
+            <p>Choisissez votre date et votre heure pour savourer un moment luxueux et agréable.</p>
+
+            <div class="hours-box">
+              <h3>Horaires</h3>
+              <ul>
+                <li><span>Lundi – Jeudi</span><strong>12:00 – 23:00</strong></li>
+                <li><span>Vendredi – Samedi</span><strong>12:00 – 00:30</strong></li>
+                <li><span>Dimanche</span><strong>11:30 – 22:30</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="reservation-form reveal" action="#" method="post">
+            <div class="field-grid">
+              <label>
+                <span>Nom</span>
+                <input type="text" name="name" placeholder="[REPLACE: Votre nom]" />
+              </label>
+
+              <label>
+                <span>Téléphone</span>
+                <input type="tel" name="phone" placeholder="[REPLACE: +212 6 ...]" />
+              </label>
+            </div>
+
+            <div class="field-grid">
+              <label>
+                <span>Date</span>
+                <input type="date" name="date" />
+              </label>
+
+              <label>
+                <span>Heure</span>
+                <input type="time" name="time" />
+              </label>
+            </div>
+
+            <label>
+              <span>Nombre de personnes</span>
+              <select name="guests">
+                <option>2 personnes</option>
+                <option>4 personnes</option>
+                <option>6 personnes</option>
+                <option>8 personnes</option>
+                <option>10+ personnes</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Remarques</span>
+              <textarea name="notes" rows="4" placeholder="[REPLACE: Allergies, occasion spéciale, terrasse, etc.]"></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary full-width">Envoyer ma demande</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow accent">Témoignages</span>
+            <h2>Ils reviennent pour la cuisine et l’ambiance</h2>
+          </div>
+
+          <div class="testimonial-slider reveal">
+            <button class="slider-btn prev" type="button" aria-label="Témoignage précédent">‹</button>
+
+            <div class="testimonial-track">
+              <blockquote class="testimonial active">
+                <p>“Une expérience vraiment agréable, le service est attentionné et la cuisine est excellente. On a l’impression d’être chez nous.”</p>
+                <footer>
+                  <strong>[REPLACE: témoignage réel]</strong>
+                  <span>Client régulier</span>
+                </footer>
+              </blockquote>
+
+              <blockquote class="testimonial">
+                <p>“Le cadre est magnifique et les plats sont généreux. Un endroit parfait pour un dîner entre amis ou en famille.”</p>
+                <footer>
+                  <strong>[REPLACE: témoignage réel]</strong>
+                  <span>Visiteur</span>
+                </footer>
+              </blockquote>
+
+              <blockquote class="testimonial">
+                <p>“Le service est rapide, l’équipe souriante et les saveurs très équilibrées. Nous y retournerons très vite.”</p>
+                <footer>
+                  <strong>[REPLACE: témoignage réel]</strong>
+                  <span>Couple</span>
+                </footer>
+              </blockquote>
+            </div>
+
+            <button class="slider-btn next" type="button" aria-label="Témoignage suivant">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section map-section" id="contact">
+        <div class="container map-grid">
+          <div class="map-card reveal">
+            <iframe
+              title="Carte du restaurant"
+              src="https://www.google.com/maps?q=Fes%20Morocco&z=12&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="contact-card reveal">
+            <span class="eyebrow accent">Contact</span>
+            <h2>Nous avons hâte de vous accueillir</h2>
+            <ul>
+              <li><strong>Adresse :</strong> [REPLACE: Rue ... , Fès]</li>
+              <li><strong>Téléphone :</strong> [REPLACE: +212 6 00 00 00 00]</li>
+              <li><strong>Email :</strong> [REPLACE: hello@restaurant.com]</li>
+              <li><strong>Instagram :</strong> [REPLACE: @restaurant]</li>
+            </ul>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="https://wa.me/[REPLACE:212600000000]?text=[REPLACE:Bonjour%20je%20souhaite%20réserver%20une%20table]" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a class="btn btn-light-outline" href="mailto:[REPLACE:hello@restaurant.com]">Email</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="#top" class="brand footer-brand" aria-label="Accueil restaurant">
+            <span class="brand-mark">LJ</span>
+            <span>Le Jardin</span>
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#story">À propos</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Galerie</a>
+          <a href="#reservation">Réservation</a>
+        </div>
+      </div>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/[REPLACE:212600000000]?text=[REPLACE:Bonjour%20je%20souhaite%20réserver%20une%20table]" target="_blank" rel="noopener noreferrer" aria-label="Réserver via WhatsApp">WhatsApp</a>
+
+    <div class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Fermer">×</button>
+      <img src="" alt="Vue de la galerie" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
