@@ -1,3 +1,5 @@
+const WHATSAPP_PHONE = '212681940627';
+
 const translations = {
   fr: {
     brandName: 'Yahya Lahlou',
@@ -92,7 +94,13 @@ const translations = {
     contactName: 'Contact direct',
     footerOffer: 'Offre',
     footerPortfolio: 'Réalisations',
-    footerContact: 'Contact'
+    footerContact: 'Contact',
+    whatsappGeneral: 'Bonjour Yahya, je souhaite un site pour mon business',
+    whatsappOffer: 'Bonjour Yahya, je veux le pack site internet',
+    whatsappDemoRestaurant: 'Bonjour Yahya, je veux un site comme celui du restaurant',
+    whatsappDemoClinic: 'Bonjour Yahya, je veux un site comme celui de la clinique',
+    whatsappDemoSport: 'Bonjour Yahya, je veux un site comme celui de la salle de sport',
+    whatsappDemoSalon: 'Bonjour Yahya, je veux un site comme celui du salon'
   },
   ar: {
     brandName: 'يحيى لحلو',
@@ -187,7 +195,13 @@ const translations = {
     contactName: 'تواصل مباشر',
     footerOffer: 'العرض',
     footerPortfolio: 'أعمالنا',
-    footerContact: 'تواصل'
+    footerContact: 'تواصل',
+    whatsappGeneral: 'السلام عليكم يحيى، أود إنشاء موقع احترافي لعملي',
+    whatsappOffer: 'السلام عليكم يحيى، أود شراء باقة الموقع الإلكتروني',
+    whatsappDemoRestaurant: 'السلام عليكم يحيى، أريد موقعًا مثل موقع المطعم',
+    whatsappDemoClinic: 'السلام عليكم يحيى، أريد موقعًا مثل موقع العيادة',
+    whatsappDemoSport: 'السلام عليكم يحيى، أريد موقعًا مثل موقع صالة الرياضة',
+    whatsappDemoSalon: 'السلام عليكم يحيى، أريد موقعًا مثل موقع الصالون'
   },
   en: {
     brandName: 'Yahya Lahlou',
@@ -282,9 +296,37 @@ const translations = {
     contactName: 'Direct contact',
     footerOffer: 'Offer',
     footerPortfolio: 'Portfolio',
-    footerContact: 'Contact'
+    footerContact: 'Contact',
+    whatsappGeneral: 'Hello Yahya, I want a website for my business',
+    whatsappOffer: 'Hello Yahya, I want the website package',
+    whatsappDemoRestaurant: 'Hello Yahya, I want a website like the restaurant one',
+    whatsappDemoClinic: 'Hello Yahya, I want a website like the clinic one',
+    whatsappDemoSport: 'Hello Yahya, I want a website like the gym one',
+    whatsappDemoSalon: 'Hello Yahya, I want a website like the salon one'
   }
 };
+
+const whatsappKeys = {
+  general: 'whatsappGeneral',
+  offer: 'whatsappOffer',
+  'demo-restaurant': 'whatsappDemoRestaurant',
+  'demo-clinic': 'whatsappDemoClinic',
+  'demo-sport': 'whatsappDemoSport',
+  'demo-salon': 'whatsappDemoSalon'
+};
+
+const whatsAppLinks = document.querySelectorAll('[data-whatsapp-key]');
+
+function updateWhatsAppLinks(lang) {
+  const map = translations[lang] || translations.ar;
+
+  whatsAppLinks.forEach((link) => {
+    const key = link.dataset.whatsappKey;
+    const messageKey = whatsappKeys[key];
+    const text = map[messageKey] || map.whatsappGeneral || 'Hello Yahya';
+    link.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`;
+  });
+}
 
 const filterButtons = document.querySelectorAll('.filter-btn');
 const cards = document.querySelectorAll('.project-card');
@@ -347,6 +389,8 @@ function applyLanguage(lang) {
   if (brandMark) {
     brandMark.textContent = lang === 'ar' ? 'ي' : 'Y';
   }
+
+  updateWhatsAppLinks(lang);
 
   langButtons.forEach((button) => {
     button.classList.toggle('active', button.dataset.lang === lang);
