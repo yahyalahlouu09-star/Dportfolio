@@ -22,8 +22,29 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
-body[data-lang="ar"] { font-family: "Cairo", sans-serif; }
+body[data-lang="ar"] {
+  font-family: "Cairo", sans-serif;
+  word-spacing: 0.12em;
+  letter-spacing: 0.01em;
+}
+body[data-lang="ar"] h1,
+body[data-lang="ar"] h2,
+body[data-lang="ar"] h3,
+body[data-lang="ar"] p,
+body[data-lang="ar"] li,
+body[data-lang="ar"] a,
+body[data-lang="ar"] summary,
+body[data-lang="ar"] button,
+body[data-lang="ar"] input,
+body[data-lang="ar"] textarea,
+body[data-lang="ar"] .brand-name,
+body[data-lang="ar"] .eyebrow {
+  word-spacing: 0.14em;
+  line-height: 1.9;
+}
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 button, input, textarea { font: inherit; }
