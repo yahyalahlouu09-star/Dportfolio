@@ -7,6 +7,9 @@ const translations = {
     navProcess: 'Process',
     navFaq: 'FAQ',
     navContact: 'Contact',
+    screenLabel: 'Nouveau',
+    screenTitle: 'Votre business visible dès le premier clic',
+    ctaTitle1: 'Prêt pour la suite ?',
     heroEyebrow: 'Sites web pour petites entreprises',
     heroTitle: 'Un site professionnel pour votre business, prêt en 5 jours',
     heroDesc: 'Je crée des sites web modernes, rapides et adaptés aux mobiles pour restaurants, cliniques, salles de sport, salons et boutiques — pour gagner plus de confiance et plus de clients.',
@@ -99,6 +102,9 @@ const translations = {
     navProcess: 'العملية',
     navFaq: 'الأسئلة الشائعة',
     navContact: 'تواصل',
+    screenLabel: 'جديد',
+    screenTitle: 'عملك ظاهر من أول نقرة',
+    ctaTitle1: 'جاهز للخطوة التالية؟',
     heroEyebrow: 'مواقع إلكترونية للشركات الصغيرة',
     heroTitle: 'موقع احترافي لعملك، جاهز خلال 5 أيام',
     heroDesc: 'أقوم بإنشاء مواقع حديثة وسريعة ومتوافقة مع الهاتف المحمول للمطاعم والعيادات وصالات الألعاب والصالونات والمتاجر — لزيادة الثقة وزيادة العملاء.',
@@ -191,6 +197,9 @@ const translations = {
     navProcess: 'Process',
     navFaq: 'FAQ',
     navContact: 'Contact',
+    screenLabel: 'New',
+    screenTitle: 'Your business visible from the first click',
+    ctaTitle1: 'Ready for the next step?',
     heroEyebrow: 'Websites for small businesses',
     heroTitle: 'A professional website for your business, ready in 5 days',
     heroDesc: 'I create modern, fast, mobile-friendly websites for restaurants, clinics, gyms, salons, and shops — to build trust and attract more customers.',
@@ -324,6 +333,11 @@ function applyLanguage(lang) {
       element.textContent = map[key];
     }
   });
+
+  const screenLabel = document.querySelector('.screen-label');
+  const screenTitle = document.querySelector('.screen-hero h3');
+  if (screenLabel && map.screenLabel) screenLabel.textContent = map.screenLabel;
+  if (screenTitle && map.screenTitle) screenTitle.textContent = map.screenTitle;
 
   if (brandText && map.brandName) {
     brandText.textContent = map.brandName;
