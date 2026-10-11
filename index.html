@@ -395,7 +395,17 @@
             <div class="field-row">
               <div class="field">
                 <label for="phone">Téléphone</label>
-                <input id="phone" type="tel" name="phone" value="+212 6 81 94 06 27" required />
+                <div class="phone-input-wrap">
+                  <select id="phone-code" name="phone_code" aria-label="Indicatif téléphonique">
+                    <option value="+212" selected>+212</option>
+                    <option value="+33">+33</option>
+                    <option value="+1">+1</option>
+                    <option value="+44">+44</option>
+                    <option value="+971">+971</option>
+                    <option value="+966">+966</option>
+                  </select>
+                  <input id="phone" type="tel" name="phone" value="681940627" required />
+                </div>
               </div>
 
               <div class="field">
