@@ -99,9 +99,9 @@ h2 { font-size: clamp(2rem, 4vw, 3.2rem); max-width: 760px; }
   position: sticky;
   top: 0;
   z-index: 30;
-  background: rgba(245, 247, 244, 0.82);
+  background: rgba(15, 23, 42, 0.82);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .nav-wrap {
   display: flex;
@@ -115,6 +115,7 @@ h2 { font-size: clamp(2rem, 4vw, 3.2rem); max-width: 760px; }
   align-items: center;
   gap: 10px;
   font-weight: 800;
+  color: #edf2f7;
 }
 .brand-mark {
   display: inline-grid;
@@ -126,28 +127,35 @@ h2 { font-size: clamp(2rem, 4vw, 3.2rem); max-width: 760px; }
   color: white;
   box-shadow: 0 10px 24px rgba(255, 127, 92, 0.3);
 }
+.brand-name {
+  color: #edf2f7;
+  font-size: 1.15rem;
+}
 .main-nav {
   display: flex;
   align-items: center;
   gap: clamp(12px, 2vw, 26px);
-  color: var(--muted);
+  color: #edf2f7;
   font-size: 0.95rem;
 }
-.main-nav a, .footer-links a { transition: color .2s ease; }
-.main-nav a:hover, .footer-links a:hover { color: var(--text); }
+.main-nav a, .footer-links a {
+  color: rgba(237,242,247,0.82);
+  transition: color .2s ease;
+}
+.main-nav a:hover, .footer-links a:hover { color: #fff; }
 .lang-switch {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 6px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.08);
   border-radius: 999px;
 }
 .lang-btn {
   border: 0;
   background: transparent;
-  color: var(--muted);
+  color: rgba(237,242,247,0.8);
   padding: 6px 10px;
   border-radius: 999px;
   font-weight: 700;
@@ -155,12 +163,6 @@ h2 { font-size: clamp(2rem, 4vw, 3.2rem); max-width: 760px; }
 }
 .lang-btn.active {
   background: var(--primary);
-  color: #fff;
-}
-.main-nav a, .footer-links a {
-  color: rgba(237,242,247,0.8);
-}
-.main-nav a:hover, .footer-links a:hover {
   color: #fff;
 }
 .hero {
