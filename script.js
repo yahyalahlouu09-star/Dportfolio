@@ -402,4 +402,4 @@ langButtons.forEach((button) => {
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
-applyLanguage('ar');
+applyLanguage('fr');
