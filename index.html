@@ -358,62 +358,82 @@
       <section class="section cta-section" id="contact">
         <div class="container cta-box reveal">
           <div>
-            <span class="eyebrow" data-i18n="ctaTitle1">جاهز للخطوة التالية؟</span>
-            <h2 data-i18n="ctaTitle">هل تحتاج إلى موقع احترافي لنشاطك؟</h2>
-            <p data-i18n="ctaText">أرسل لي معلوماتك وسأرد عليك بسرعة.</p>
+            <span class="eyebrow" data-i18n="ctaTitle1">Prêt pour la suite ?</span>
+            <h2 data-i18n="ctaTitle">Besoin d’un site professionnel pour votre activité ?</h2>
+            <p data-i18n="ctaText">Envoyez-moi simplement vos informations et je vous répondrai rapidement.</p>
           </div>
 
           <div class="cta-actions">
-            <a class="btn btn-primary" data-whatsapp-key="general" href="https://wa.me/212681940627?text=Bonjour%20Yahya%2C%20je%20souhaite%20un%20site%20pour%20mon%20business" target="_blank" rel="noopener noreferrer" data-i18n="ctaButton">تواصل عبر واتساب</a>
+            <a class="btn btn-primary" data-whatsapp-key="general" href="https://wa.me/212681940627?text=Bonjour%20Yahya%2C%20je%20souhaite%20un%20site%20pour%20mon%20business" target="_blank" rel="noopener noreferrer" data-i18n="ctaButton">WhatsApp me</a>
           </div>
         </div>
 
         <div class="container contact-grid">
-          <form class="contact-form reveal" action="https://formsubmit.co/[REPLACE: your-email@example.com]" method="POST">
+          <form class="contact-form reveal" action="https://formsubmit.co/yahyalahlouu09@gmail.com" method="POST">
             <div class="field-row">
               <div class="field">
-                <label for="name" data-i18n="formName">الاسم</label>
-                <input id="name" type="text" name="name" placeholder="[REPLACE: اسمك]" required />
+                <label for="name">Nom</label>
+                <input id="name" type="text" name="name" placeholder="Votre nom" required />
               </div>
 
               <div class="field">
-                <label for="business" data-i18n="formBusiness">النشاط</label>
-                <input id="business" type="text" name="business" placeholder="[REPLACE: مطعم / عيادة / صالون]" required />
+                <label for="business">Business</label>
+                <input id="business" list="business-list" type="text" name="business" placeholder="Choisissez ou tapez votre activité" required />
+                <datalist id="business-list">
+                  <option value="Restaurant"></option>
+                  <option value="Clinique"></option>
+                  <option value="Salle de sport"></option>
+                  <option value="Salon"></option>
+                  <option value="Boutique"></option>
+                  <option value="E-commerce"></option>
+                  <option value="Cabinet"></option>
+                  <option value="Autre"></option>
+                </datalist>
               </div>
             </div>
 
             <div class="field-row">
               <div class="field">
-                <label for="phone" data-i18n="formPhone">الهاتف</label>
-                <input id="phone" type="tel" name="phone" placeholder="[REPLACE: +212 6 00 00 00 00]" required />
+                <label for="phone">Téléphone</label>
+                <input id="phone" type="tel" name="phone" value="+212 6 81 94 06 27" required />
               </div>
 
               <div class="field">
-                <label for="city" data-i18n="formCity">المدينة</label>
-                <input id="city" type="text" name="city" placeholder="[REPLACE: فاس]" />
+                <label for="city">Ville</label>
+                <input id="city" list="city-list" type="text" name="city" placeholder="Choisissez ou tapez votre ville" />
+                <datalist id="city-list">
+                  <option value="Casablanca"></option>
+                  <option value="Rabat"></option>
+                  <option value="Fès"></option>
+                  <option value="Marrakech"></option>
+                  <option value="Tanger"></option>
+                  <option value="Agadir"></option>
+                  <option value="Meknès"></option>
+                  <option value="Autre"></option>
+                </datalist>
               </div>
             </div>
 
             <div class="field">
-              <label for="message" data-i18n="formMessage">تفاصيل المشروع</label>
-              <textarea id="message" name="message" rows="5" placeholder="[REPLACE: أحتاج موقعًا لعيادتي مع حجز المواعيد وزر واتساب]" required></textarea>
+              <label for="message">Détails du projet</label>
+              <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet, vos besoins, votre style et votre objectif" required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary send-btn" data-i18n="formSubmit">إرسال الطلب</button>
+            <button type="submit" class="btn btn-primary send-btn">Envoyer ma demande</button>
           </form>
 
           <aside class="contact-card reveal">
-            <h3 data-i18n="contactName">تواصل مباشر</h3>
+            <h3>Contact direct</h3>
             <ul>
-              <li><strong>الاسم:</strong> يحيى لحلو</li>
-              <li><strong>المدينة:</strong> فاس</li>
-              <li><strong>الهاتف:</strong> +212 681940627</li>
-              <li><strong>البريد:</strong> [REPLACE: your-email@example.com]</li>
+              <li><strong>Nom:</strong> Yahya Lahlou</li>
+              <li><strong>Ville:</strong> Fès</li>
+              <li><strong>Téléphone:</strong> +212 6 81 94 06 27</li>
+              <li><strong>Email:</strong> yahyalahlouu09@gmail.com</li>
             </ul>
 
             <div class="social-links">
-              <a href="[REPLACE: https://instagram.com/yourhandle]" target="_blank" rel="noreferrer">Instagram</a>
-              <a href="[REPLACE: https://facebook.com/yourpage]" target="_blank" rel="noreferrer">Facebook</a>
+              <a href="https://www.instagram.com/techlyn.24?utm_source=ig_web_button_share_sheet&xtok=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
               <a data-whatsapp-key="general" href="https://wa.me/212681940627?text=Bonjour%20Yahya%2C%20je%20souhaite%20un%20site%20pour%20mon%20business" target="_blank" rel="noreferrer">WhatsApp</a>
             </div>
           </aside>
