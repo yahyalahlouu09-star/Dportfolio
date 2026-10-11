@@ -2,7 +2,7 @@ const WHATSAPP_PHONE = '212681940627';
 
 const translations = {
   fr: {
-    brandName: 'Yahya Lahlou',
+    brandName: 'Techlyn',
     navWhy: 'Pourquoi nous',
     navOffer: 'Offre',
     navPortfolio: 'Réalisations',
@@ -95,15 +95,15 @@ const translations = {
     footerOffer: 'Offre',
     footerPortfolio: 'Réalisations',
     footerContact: 'Contact',
-    whatsappGeneral: 'Bonjour Yahya, je souhaite un site pour mon business',
-    whatsappOffer: 'Bonjour Yahya, je veux le pack site internet',
-    whatsappDemoRestaurant: 'Bonjour Yahya, je veux un site comme celui du restaurant',
-    whatsappDemoClinic: 'Bonjour Yahya, je veux un site comme celui de la clinique',
-    whatsappDemoSport: 'Bonjour Yahya, je veux un site comme celui de la salle de sport',
-    whatsappDemoSalon: 'Bonjour Yahya, je veux un site comme celui du salon'
+    whatsappGeneral: 'Bonjour Techlyn, je souhaite un site pour mon business',
+    whatsappOffer: 'Bonjour Techlyn, je veux le pack site internet',
+    whatsappDemoRestaurant: 'Bonjour Techlyn, je veux un site comme celui du restaurant',
+    whatsappDemoClinic: 'Bonjour Techlyn, je veux un site comme celui de la clinique',
+    whatsappDemoSport: 'Bonjour Techlyn, je veux un site comme celui de la salle de sport',
+    whatsappDemoSalon: 'Bonjour Techlyn, je veux un site comme celui du salon'
   },
   ar: {
-    brandName: 'يحيى لحلو',
+    brandName: 'Techlyn',
     navWhy: 'لماذا نحن',
     navOffer: 'العرض',
     navPortfolio: 'أعمالنا',
@@ -204,7 +204,7 @@ const translations = {
     whatsappDemoSalon: 'السلام عليكم يحيى، أريد موقعًا مثل موقع الصالون'
   },
   en: {
-    brandName: 'Yahya Lahlou',
+    brandName: 'Techlyn',
     navWhy: 'Why us',
     navOffer: 'Offer',
     navPortfolio: 'Portfolio',
@@ -297,12 +297,12 @@ const translations = {
     footerOffer: 'Offer',
     footerPortfolio: 'Portfolio',
     footerContact: 'Contact',
-    whatsappGeneral: 'Hello Yahya, I want a website for my business',
-    whatsappOffer: 'Hello Yahya, I want the website package',
-    whatsappDemoRestaurant: 'Hello Yahya, I want a website like the restaurant one',
-    whatsappDemoClinic: 'Hello Yahya, I want a website like the clinic one',
-    whatsappDemoSport: 'Hello Yahya, I want a website like the gym one',
-    whatsappDemoSalon: 'Hello Yahya, I want a website like the salon one'
+    whatsappGeneral: 'Hello Techlyn, I want a website for my business',
+    whatsappOffer: 'Hello Techlyn, I want the website package',
+    whatsappDemoRestaurant: 'Hello Techlyn, I want a website like the restaurant one',
+    whatsappDemoClinic: 'Hello Techlyn, I want a website like the clinic one',
+    whatsappDemoSport: 'Hello Techlyn, I want a website like the gym one',
+    whatsappDemoSalon: 'Hello Techlyn, I want a website like the salon one'
   }
 };
 
@@ -323,7 +323,7 @@ function updateWhatsAppLinks(lang) {
   whatsAppLinks.forEach((link) => {
     const key = link.dataset.whatsappKey;
     const messageKey = whatsappKeys[key];
-    const text = map[messageKey] || map.whatsappGeneral || 'Hello Yahya';
+    const text = map[messageKey] || map.whatsappGeneral || 'Hello Techlyn';
     link.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`;
   });
 }
@@ -387,7 +387,7 @@ function applyLanguage(lang) {
 
   const brandMark = document.querySelector('[data-brand-mark]');
   if (brandMark) {
-    brandMark.textContent = lang === 'ar' ? 'ي' : 'Y';
+    brandMark.textContent = 'T';
   }
 
   updateWhatsAppLinks(lang);
