@@ -1,92 +1,30 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.main-nav');
-if (menuToggle && nav) {
-  menuToggle.addEventListener('click', () => {
-    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-    menuToggle.setAttribute('aria-expanded', String(!expanded));
-    nav.classList.toggle('mobile-open');
+const form = document.querySelector('.reservation-form');
+if (form) {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const nom = formData.get('nom') || 'Client';
+    const personnes = formData.get('personnes') || '2';
+    const date = formData.get('date') || 'aujourd\'hui';
+    const heure = formData.get('heure') || '18:00';
+    const message = `Bonjour Yahya, je souhaite réserver une table pour ${personnes} personnes le ${date} à ${heure}. Nom : ${nom}.`;
+    window.open(`https://wa.me/212600000000?text=${encodeURIComponent(message)}`, '_blank');
   });
 }
 
-const tabButtons = document.querySelectorAll('.tab-btn');
-const menuItems = document.querySelectorAll('.menu-item');
-
-tabButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const target = button.dataset.tab;
-
-    tabButtons.forEach((btn) => btn.classList.toggle('active', btn === button));
-    menuItems.forEach((item) => {
-      const shouldShow = !target || item.dataset.category === target;
-      item.classList.toggle('is-hidden', !shouldShow);
-    });
-  });
-});
-
-const galleryButtons = document.querySelectorAll('.gallery-item');
-const lightbox = document.querySelector('.lightbox');
-const lightboxImage = document.querySelector('.lightbox img');
-const lightboxClose = document.querySelector('.lightbox-close');
-
-galleryButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const image = button.dataset.image;
-    if (!image || !lightbox || !lightboxImage) return;
-
-    lightboxImage.src = image;
-    lightbox.classList.add('open');
-    lightbox.setAttribute('aria-hidden', 'false');
-  });
-});
-
-lightboxClose?.addEventListener('click', () => {
-  lightbox?.classList.remove('open');
-  lightbox?.setAttribute('aria-hidden', 'true');
-});
-
-lightbox?.addEventListener('click', (event) => {
-  if (event.target === lightbox) {
-    lightbox.classList.remove('open');
-    lightbox.setAttribute('aria-hidden', 'true');
-  }
-});
-
-const revealItems = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-      }
-    });
-  },
-  { threshold: 0.14 }
-);
-
-revealItems.forEach((item) => observer.observe(item));
-
-const testimonials = [...document.querySelectorAll('.testimonial')];
-let activeIndex = 0;
-
-function showTestimonial(index) {
-  testimonials.forEach((testimonial, i) => {
-    testimonial.classList.toggle('active', i === index);
+const menuBtn = document.querySelector('.menu-btn');
+const nav = document.querySelector('.demo-nav nav');
+if (menuBtn && nav) {
+  menuBtn.addEventListener('click', () => {
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    nav.style.position = 'absolute';
+    nav.style.top = '72px';
+    nav.style.left = '20px';
+    nav.style.right = '20px';
+    nav.style.background = 'rgba(255,255,255,0.95)';
+    nav.style.padding = '14px';
+    nav.style.borderRadius = '18px';
+    nav.style.border = '1px solid rgba(43,29,20,0.12)';
+    nav.style.flexDirection = 'column';
   });
 }
-
-document.querySelector('.slider-btn.prev')?.addEventListener('click', () => {
-  activeIndex = (activeIndex - 1 + testimonials.length) % testimonials.length;
-  showTestimonial(activeIndex);
-});
-
-document.querySelector('.slider-btn.next')?.addEventListener('click', () => {
-  activeIndex = (activeIndex + 1) % testimonials.length;
-  showTestimonial(activeIndex);
-});
-
-setInterval(() => {
-  if (testimonials.length > 1) {
-    activeIndex = (activeIndex + 1) % testimonials.length;
-    showTestimonial(activeIndex);
-  }
-}, 5000);

@@ -1,79 +1,30 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.main-nav');
-if (menuToggle && nav) {
-  menuToggle.addEventListener('click', () => {
-    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-    menuToggle.setAttribute('aria-expanded', String(!expanded));
-    nav.classList.toggle('mobile-open');
+const form = document.querySelector('.booking-form');
+if (form) {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const nom = formData.get('nom') || 'Client';
+    const prestation = formData.get('prestation') || 'soin';
+    const date = formData.get('date') || 'aujourd\'hui';
+    const heure = formData.get('heure') || '10:00';
+    const message = `Bonjour Yahya, je souhaite réserver une prestation de ${prestation} le ${date} à ${heure}. Nom : ${nom}.`;
+    window.open(`https://wa.me/212600000000?text=${encodeURIComponent(message)}`, '_blank');
   });
 }
 
-const galleryButtons = document.querySelectorAll('.gallery-item');
-const lightbox = document.querySelector('.lightbox');
-const lightboxImage = document.querySelector('.lightbox img');
-const lightboxClose = document.querySelector('.lightbox-close');
-
-galleryButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const image = button.dataset.image;
-    if (!image || !lightbox || !lightboxImage) return;
-
-    lightboxImage.src = image;
-    lightbox.classList.add('open');
-    lightbox.setAttribute('aria-hidden', 'false');
-  });
-});
-
-lightboxClose?.addEventListener('click', () => {
-  lightbox?.classList.remove('open');
-  lightbox?.setAttribute('aria-hidden', 'true');
-});
-
-lightbox?.addEventListener('click', (event) => {
-  if (event.target === lightbox) {
-    lightbox.classList.remove('open');
-    lightbox.setAttribute('aria-hidden', 'true');
-  }
-});
-
-const revealItems = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-      }
-    });
-  },
-  { threshold: 0.14 }
-);
-
-revealItems.forEach((item) => observer.observe(item));
-
-const testimonials = [...document.querySelectorAll('.testimonial')];
-let activeIndex = 0;
-
-function showTestimonial(index) {
-  testimonials.forEach((testimonial, i) => {
-    testimonial.classList.toggle('active', i === index);
+const menuBtn = document.querySelector('.menu-btn');
+const nav = document.querySelector('.demo-nav nav');
+if (menuBtn && nav) {
+  menuBtn.addEventListener('click', () => {
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    nav.style.position = 'absolute';
+    nav.style.top = '72px';
+    nav.style.left = '20px';
+    nav.style.right = '20px';
+    nav.style.background = 'rgba(255,255,255,0.95)';
+    nav.style.padding = '14px';
+    nav.style.border = '1px solid rgba(58,35,40,0.12)';
+    nav.style.borderRadius = '18px';
+    nav.style.flexDirection = 'column';
   });
 }
-
-document.querySelector('.slider-btn.prev')?.addEventListener('click', () => {
-  activeIndex = (activeIndex - 1 + testimonials.length) % testimonials.length;
-  showTestimonial(activeIndex);
-});
-
-document.querySelector('.slider-btn.next')?.addEventListener('click', () => {
-  activeIndex = (activeIndex + 1) % testimonials.length;
-  showTestimonial(activeIndex);
-});
-
-setInterval(() => {
-  if (testimonials.length > 1) {
-    activeIndex = (activeIndex + 1) % testimonials.length;
-    showTestimonial(activeIndex);
-  }
-}, 5000);
-
-document.getElementById('year').textContent = new Date().getFullYear();

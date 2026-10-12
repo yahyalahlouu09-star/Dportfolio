@@ -1,366 +1,123 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Démonstration d’un site web pour clinique moderne : services, équipe médicale, rendez-vous, FAQ et contact." />
-    <title>Clinique El Masar | Démonstration</title>
+    <title>Vie Sûre | Clinique moderne à Fès</title>
+    <meta name="description" content="Clinique Vie Sûre à Fès : consultation, soins et prise de rendez-vous rapide." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="demo-banner">Site de démonstration réalisé par [mon nom]</div>
+  <body class="demo demo-clinique">
+    <div class="topbar-demo">Site de démonstration réalisé par Yahya</div>
+    <a class="portfolio-back" href="../../index.html">← Retour au portfolio</a>
+    <a class="floating-whatsapp" href="https://wa.me/212600000000?text=Bonjour%20Yahya%2C%20je%20voudrais%20prendre%20un%20rendez-vous%20%C3%A0%20la%20clinique%20Vie%20S%C3%BBre." target="_blank" rel="noopener noreferrer">WhatsApp</a>
 
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a href="#top" class="brand" aria-label="Accueil clinique">
-          <span class="brand-mark">CM</span>
-          <span>Clinique El Masar</span>
-        </a>
-
-        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-
-        <nav class="main-nav" aria-label="Navigation clinique">
+    <header class="demo-header">
+      <div class="container demo-nav">
+        <div class="brand-block"><span class="brand-mark">V</span> Vie Sûre</div>
+        <nav>
           <a href="#services">Services</a>
           <a href="#about">À propos</a>
           <a href="#team">Équipe</a>
-          <a href="#rdv">Rendez-vous</a>
-          <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </nav>
-
-        <a class="header-cta" href="#rdv">Prendre rendez-vous</a>
+        <button class="menu-btn" type="button" aria-label="Ouvrir le menu">☰</button>
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-overlay"></div>
+    <main>
+      <section class="hero-demo">
         <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <span class="eyebrow">Santé • confiance • bien-être</span>
-            <h1>Une prise en charge médicale moderne et humaine.</h1>
-            <p>
-              Des consultations de qualité, une équipe attentive et un service simple pour vous accompagner au quotidien.
-            </p>
+          <div class="hero-copy">
+            <span class="eyebrow">Clinique moderne</span>
+            <h1>Une prise en charge plus claire, plus rassurante.</h1>
+            <p>Des consultations bien encadrées, un accueil professionnel et des soins pensés pour répondre aux besoins de chacun.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#rdv">Prendre rendez-vous</a>
-              <a class="btn btn-light" href="#services">Découvrir nos services</a>
+              <a class="action primary" href="#contact">Prendre rendez-vous</a>
+              <a class="action secondary" href="#services">Nos services</a>
             </div>
-            <ul class="hero-pills">
-              <li>Consultations</li>
-              <li>Analyses</li>
-              <li>Suivi personnalisé</li>
-            </ul>
           </div>
-
-          <div class="hero-card reveal">
-            <div class="panel">
-              <div class="panel-top">
-                <span class="badge">Urgence</span>
-                <strong>Accueil rapide</strong>
-              </div>
-              <div class="panel-row">
-                <div>
-                  <span>Ouverture</span>
-                  <strong>08:00 – 20:00</strong>
-                </div>
-                <div>
-                  <span>Adresse</span>
-                  <strong>Centre ville</strong>
-                </div>
-              </div>
-            </div>
+          <div class="hero-media">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=70" alt="Clinique moderne et lumineuse" width="1200" height="900" loading="lazy" />
           </div>
         </div>
       </section>
 
-      <section class="section trust" id="about">
-        <div class="container trust-grid">
-          <div class="image-block reveal">
-            <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1200&q=80" alt="Salle d’attente moderne de clinique" loading="lazy" width="1200" height="900" />
+      <section class="stats-band">
+        <div class="container stats-grid">
+          <div><strong>24/7</strong><span>service d’accueil</span></div>
+          <div><strong>8</strong><span>spécialistes</span></div>
+          <div><strong>+2k</strong><span>patients suivis</span></div>
+          <div><strong>15 min</strong><span>moyenne d’attente</span></div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container section-head">
+          <span class="eyebrow">Services</span>
+          <h2>Des soins fiables, adaptés à votre routine.</h2>
+        </div>
+        <div class="container cards-grid">
+          <article class="info-card"><h3>Consultation générale</h3><p>Évaluation rapide et conseils clairs pour mieux comprendre votre état de santé.</p></article>
+          <article class="info-card"><h3>Suivi médical</h3><p>Accompagnement régulier pour la santé, la prévention et les traitements.</p></article>
+          <article class="info-card"><h3>Soins dentaires</h3><p>Un environnement propre, rassurant et professionnel pour votre confort.</p></article>
+          <article class="info-card"><h3>Imagerie</h3><p>Diagnostic précis et analyse fiable pour décider ensemble de la meilleure étape.</p></article>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-grid">
+          <div class="info-copy">
+            <span class="eyebrow">À propos</span>
+            <h2>Des professionnels qui écoutent avant de décider.</h2>
+            <p>Nous croyons que le bon accompagnement commence par une communication claire. C’est pour cela que chaque patient est pris en charge avec sérieux, simplicité et écoute.</p>
           </div>
-
-          <div class="content-block reveal">
-            <span class="eyebrow accent">Pourquoi nous</span>
-            <h2>Un accompagnement fiable pour chaque étape de votre santé.</h2>
-            <p>
-              Notre clinique allie expertise médicale, écoute attentive et technologies modernes pour offrir un service de qualité.
-              Nous mettons le patient au centre de chaque prise en charge avec des consultations claires et personnalisées.
-            </p>
-
-            <div class="stats-grid">
-              <div>
-                <strong>15+</strong>
-                <span>Ans d’expertise</span>
-              </div>
-              <div>
-                <strong>8K+</strong>
-                <span>Patients suivis</span>
-              </div>
-              <div>
-                <strong>4.9/5</strong>
-                <span>Note moyenne</span>
-              </div>
-            </div>
+          <div class="feature-list">
+            <div><strong>Consultation rapide</strong><span>Des délais plus courts pour mieux répondre aux besoins.</span></div>
+            <div><strong>Équipe qualifiée</strong><span>Des professionnels expérimentés et bienveillants.</span></div>
+            <div><strong>Environnement serein</strong><span>Un cadre propre, lumineux et pensé pour votre confort.</span></div>
           </div>
         </div>
       </section>
 
-      <section class="section services" id="services">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow accent">Services</span>
-            <h2>Une expertise pensée pour votre bien-être</h2>
-          </div>
-
-          <div class="service-grid">
-            <article class="service-card reveal">
-              <div class="icon">01</div>
-              <h3>Consultation générale</h3>
-              <p>Examens cliniques, conseils personnalisés et suivi de santé à long terme.</p>
-            </article>
-
-            <article class="service-card reveal">
-              <div class="icon">02</div>
-              <h3>Cardiologie</h3>
-              <p>Évaluation du cœur, dépistage et suivi des pathologies cardiovasculaires.</p>
-            </article>
-
-            <article class="service-card reveal">
-              <div class="icon">03</div>
-              <h3>Dermatologie</h3>
-              <p>Consultations pour peau, soins et prise en charge des affections cutanées.</p>
-            </article>
-
-            <article class="service-card reveal">
-              <div class="icon">04</div>
-              <h3>Laboratoire</h3>
-              <p>Analyses rapides et diagnostics fiables pour un suivi précis et serein.</p>
-            </article>
-
-            <article class="service-card reveal">
-              <div class="icon">05</div>
-              <h3>Suivi femme enceinte</h3>
-              <p>Accompagnement médical, contrôle et conseils sur chaque étape.</p>
-            </article>
-
-            <article class="service-card reveal">
-              <div class="icon">06</div>
-              <h3>Vaccination</h3>
-              <p>Protection optimale avec un accompagnement clair et des rappels sûrs.</p>
-            </article>
-          </div>
+      <section class="team" id="team">
+        <div class="container section-head">
+          <span class="eyebrow">Équipe</span>
+          <h2>Des profils proches, compétents et disponibles.</h2>
+        </div>
+        <div class="container team-grid">
+          <article class="member"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=70" alt="Docteur de la clinique" /><div><h3>Dr. Sana B.</h3><span>Générale</span></div></article>
+          <article class="member"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=70" alt="Médecin de la clinique" /><div><h3>Dr. Karim M.</h3><span>Cardiologie</span></div></article>
+          <article class="member"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=70" alt="Infirmière de la clinique" /><div><h3>Ines A.</h3><span>Soins</span></div></article>
         </div>
       </section>
 
-      <section class="section team" id="team">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow accent">Équipe médicale</span>
-            <h2>Des professionnels à l’écoute</h2>
+      <section class="contact" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <span class="eyebrow">Rendez-vous</span>
+            <h2>Choisissez le bon moment et laissez-nous vous rappeler.</h2>
           </div>
-
-          <div class="team-grid">
-            <article class="doctor-card reveal">
-              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=80" alt="Médecin généraliste souriant en blouse" loading="lazy" width="900" height="1000" />
-              <div class="doctor-body">
-                <h3>Dr. Salma Benali</h3>
-                <span>Généraliste</span>
-                <p>Spécialisée en prévention et conseil personnalisé pour les adultes.</p>
-              </div>
-            </article>
-
-            <article class="doctor-card reveal">
-              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80" alt="Médecin homme en consultation" loading="lazy" width="900" height="1000" />
-              <div class="doctor-body">
-                <h3>Dr. Youssef Idrissi</h3>
-                <span>Cardiologue</span>
-                <p>Expert en dépistage et suivi des patients à risque cardiovasculaire.</p>
-              </div>
-            </article>
-
-            <article class="doctor-card reveal">
-              <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=80" alt="Infirmière professionnelle souriante" loading="lazy" width="900" height="1000" />
-              <div class="doctor-body">
-                <h3>Imane Khatabi</h3>
-                <span>Infirmière</span>
-                <p>Accueil, soins et accompagnement administratif avec bienveillance.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section appointment" id="rdv">
-        <div class="container rdv-grid">
-          <div class="rdv-copy reveal">
-            <span class="eyebrow accent">Prise de rendez-vous</span>
-            <h2>Réservez votre consultation en quelques clics.</h2>
-            <p>Une organisation simple et rapide pour un suivi médical serein.</p>
-
-            <div class="hours-box">
-              <h3>Horaires d’ouverture</h3>
-              <ul>
-                <li><span>Lundi – Vendredi</span><strong>08:00 – 20:00</strong></li>
-                <li><span>Samedi</span><strong>09:00 – 17:00</strong></li>
-                <li><span>Dimanche</span><strong>Sur appel</strong></li>
-              </ul>
-            </div>
-          </div>
-
-          <form class="appointment-form reveal" action="#" method="post">
-            <div class="field-grid">
-              <label>
-                <span>Nom complet</span>
-                <input type="text" name="name" placeholder="[REPLACE: Votre nom]" />
-              </label>
-
-              <label>
-                <span>Téléphone</span>
-                <input type="tel" name="phone" placeholder="[REPLACE: +212 6 ...]" />
-              </label>
-            </div>
-
-            <div class="field-grid">
-              <label>
-                <span>Service</span>
-                <select name="service">
-                  <option>Consultation générale</option>
-                  <option>Cardiologie</option>
-                  <option>Dermatologie</option>
-                  <option>Laboratoire</option>
-                  <option>Suivi femme enceinte</option>
-                </select>
-              </label>
-
-              <label>
-                <span>Date</span>
-                <input type="date" name="date" />
-              </label>
-            </div>
-
-            <label>
-              <span>Message</span>
-              <textarea name="message" rows="4" placeholder="[REPLACE: Décrivez votre besoin ou votre motif de consultation]"></textarea>
-            </label>
-
-            <button type="submit" class="btn btn-primary full-width">Confirmer ma demande</button>
+          <form class="booking-form" action="https://wa.me/212600000000" method="get" target="_blank" rel="noopener noreferrer">
+            <div class="field"><label>Nom</label><input type="text" name="nom" placeholder="Votre nom" /></div>
+            <div class="field"><label>Service</label><input type="text" name="service" placeholder="Consultation" /></div>
+            <div class="field"><label>Date</label><input type="date" name="date" /></div>
+            <div class="field"><label>Heure</label><input type="time" name="heure" /></div>
+            <button type="submit" class="action primary">Prendre rendez-vous</button>
           </form>
-        </div>
-      </section>
-
-      <section class="section faq" id="faq">
-        <div class="container faq-wrap">
-          <div class="section-heading reveal">
-            <span class="eyebrow accent">FAQ</span>
-            <h2>Questions fréquentes</h2>
-          </div>
-
-          <div class="faq-list reveal">
-            <details open>
-              <summary>Comment réserver un rendez-vous ?</summary>
-              <p>Vous pouvez remplir le formulaire de prise de rendez-vous ou nous contacter directement par téléphone ou WhatsApp.</p>
-            </details>
-
-            <details>
-              <summary>Les consultations sont-elles rapides ?</summary>
-              <p>Oui, l’accueil est rapide et les délais d’attente sont optimisés selon les besoins et les urgences.</p>
-            </details>
-
-            <details>
-              <summary>Faites-vous aussi des analyses ?</summary>
-              <p>Oui, la clinique propose un accès pratique aux analyses de laboratoire avec un suivi clair et rapide.</p>
-            </details>
-
-            <details>
-              <summary>Puis-je obtenir un suivi régulier ?</summary>
-              <p>Oui, plusieurs patients bénéficient d’un suivi personnalisé avec suivi régulier et conseils de prévention.</p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="section testimonials">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow accent">Témoignages</span>
-            <h2>Les patients nous font confiance</h2>
-          </div>
-
-          <div class="testimonial-slider reveal">
-            <button class="slider-btn prev" type="button" aria-label="Précédent">‹</button>
-
-            <div class="testimonial-track">
-              <blockquote class="testimonial active">
-                <p>“Une équipe très professionnelle et très bienveillante. J’ai trouvé une écoute attentive et des conseils clairs.”</p>
-                <footer>
-                  <strong>[REPLACE: témoignage réel]</strong>
-                  <span>Patient</span>
-                </footer>
-              </blockquote>
-
-              <blockquote class="testimonial">
-                <p>“Le service est rapide, les médecins sont rassurants et l’accueil montre une vraie qualité humaine.”</p>
-                <footer>
-                  <strong>[REPLACE: témoignage réel]</strong>
-                  <span>Patient régulier</span>
-                </footer>
-              </blockquote>
-            </div>
-
-            <button class="slider-btn next" type="button" aria-label="Suivant">›</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="section map" id="contact">
-        <div class="container map-grid">
-          <div class="map-card reveal">
-            <iframe title="Carte de la clinique" src="https://www.google.com/maps?q=Fes%20Morocco&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-
-          <div class="contact-card reveal">
-            <span class="eyebrow accent">Contact</span>
-            <h2>Une clinique à votre service</h2>
-            <ul>
-              <li><strong>Adresse :</strong> [REPLACE: Avenue ... , Fès]</li>
-              <li><strong>Téléphone :</strong> [REPLACE: +212 6 00 00 00 00]</li>
-              <li><strong>Email :</strong> [REPLACE: contact@clinique.ma]</li>
-              <li><strong>Instagram :</strong> [REPLACE: @cliniqueelmasar]</li>
-            </ul>
-            <div class="contact-actions">
-              <a class="btn btn-primary" href="https://wa.me/212681940627?text=Bonjour%20je%20souhaite%20prendre%20un%20rendez-vous" target="_blank" rel="noreferrer">WhatsApp</a>
-              <a class="btn btn-outline" href="mailto:[REPLACE:contact@clinique.ma]">Email</a>
-            </div>
-          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="demo-footer">
       <div class="container footer-wrap">
-        <div>
-          <a href="#top" class="brand footer-brand" aria-label="Accueil clinique">
-            <span class="brand-mark">CM</span>
-            <span>Clinique El Masar</span>
-          </a>
-        </div>
-
-        <div class="footer-links">
-          <a href="#services">Services</a>
-          <a href="#team">Équipe</a>
-          <a href="#rdv">Rendez-vous</a>
-          <a href="#faq">FAQ</a>
-        </div>
+        <p>© 2026 Vie Sûre</p>
+        <a href="../../index.html">Retour au portfolio</a>
       </div>
     </footer>
-
-    <a class="floating-whatsapp" href="https://wa.me/212681940627?text=Bonjour%20je%20souhaite%20prendre%20un%20rendez-vous" target="_blank" rel="noopener noreferrer" aria-label="Prendre un rendez-vous via WhatsApp">WhatsApp</a>
 
     <script src="script.js"></script>
   </body>

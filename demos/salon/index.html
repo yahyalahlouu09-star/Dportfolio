@@ -1,299 +1,121 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Site de démonstration pour un salon de beauté moderne : services, tarifs, réservation WhatsApp, galerie, témoignages et contact." />
-    <title>Lumière Studio | Salon de beauté de démonstration</title>
+    <title>Rose Atelier | Salon de beauté à Fès</title>
+    <meta name="description" content="Rose Atelier : salon de beauté et coiffure à Fès, prestations, rendez-vous et ambiance premium." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="demo-banner">Site de démonstration réalisé par [mon nom]</div>
+  <body class="demo demo-salon">
+    <div class="topbar-demo">Site de démonstration réalisé par Yahya</div>
+    <a class="portfolio-back" href="../../index.html">← Retour au portfolio</a>
+    <a class="floating-whatsapp" href="https://wa.me/212600000000?text=Bonjour%20Yahya%2C%20je%20souhaite%20prendre%20un%20rendez-vous%20au%20salon%20Rose%20Atelier." target="_blank" rel="noopener noreferrer">WhatsApp</a>
 
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a href="#top" class="brand" aria-label="Accueil salon">
-          <span class="brand-mark">LS</span>
-          <span>Lumière Studio</span>
-        </a>
-
-        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-
-        <nav class="main-nav" aria-label="Navigation du salon">
+    <header class="demo-header">
+      <div class="container demo-nav">
+        <div class="brand-block"><span class="brand-mark">R</span> Rose Atelier</div>
+        <nav>
+          <a href="#prestations">Prestations</a>
+          <a href="#galerie">Galerie</a>
           <a href="#about">À propos</a>
-          <a href="#services">Services</a>
-          <a href="#gallery">Galerie</a>
-          <a href="#tarifs">Tarifs</a>
           <a href="#contact">Contact</a>
         </nav>
-
-        <a class="header-cta" href="https://wa.me/212681940627?text=Bonjour%20je%20souhaite%20prendre%20un%20rendez-vous%20au%20salon" target="_blank" rel="noopener noreferrer">Réserver</a>
+        <button class="menu-btn" type="button" aria-label="Ouvrir le menu">☰</button>
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-overlay"></div>
+    <main>
+      <section class="hero-demo">
         <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <span class="eyebrow">Beauté • soins • bien-être</span>
-            <h1>Une beauté naturelle, un moment de confiance.</h1>
-            <p>
-              Des soins personnalisés pour révéler votre éclat, avec des techniques modernes, un accueil chaleureux et un cadre inspirant.
-            </p>
+          <div class="hero-copy">
+            <span class="eyebrow">Salon de beauté</span>
+            <h1>Un moment pour vous, pensé pour briller.</h1>
+            <p>Coiffure, beauté des mains, soins visage et ambiance douce pour sentir mieux chaque jour.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="https://wa.me/212681940627?text=Bonjour%20je%20souhaite%20prendre%20un%20rendez-vous%20au%20salon" target="_blank" rel="noopener noreferrer">Réserver une visite</a>
-              <a class="btn btn-light" href="#services">Voir les services</a>
-            </div>
-            <ul class="hero-meta">
-              <li>Équipe qualifiée</li>
-              <li>Produits premium</li>
-              <li>Horaire flexible</li>
-            </ul>
-          </div>
-
-          <div class="hero-card reveal">
-            <div class="booking-card">
-              <div class="booking-head">
-                <span class="badge">Offre spéciale</span>
-                <strong>Soins duo</strong>
-              </div>
-              <div class="booking-info">
-                <div>
-                  <span>Prix</span>
-                  <strong>650 MAD</strong>
-                </div>
-                <div>
-                  <span>Durée</span>
-                  <strong>90 min</strong>
-                </div>
-              </div>
+              <a class="action primary" href="#contact">Réserver</a>
+              <a class="action secondary" href="#prestations">Voir les prestations</a>
             </div>
           </div>
+          <div class="hero-media"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=70" alt="Salon Rose Atelier" width="1200" height="900" loading="lazy" /></div>
         </div>
       </section>
 
-      <section class="section story" id="about">
-        <div class="container story-grid">
-          <div class="story-image reveal">
-            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80" alt="Salon de beauté moderne avec chaise et miroir" loading="lazy" width="1200" height="900" />
-          </div>
-
-          <div class="story-content reveal">
-            <span class="eyebrow accent">Notre salon</span>
-            <h2>Un espace pensé pour vous sentir bien, belle et détendue.</h2>
-            <p>
-              Lumière Studio associe esthétique, confort et expertise pour offrir une expérience beauté complète : coiffure, soins du visage, manucure et beauté des ongles.
-            </p>
-            <div class="story-stats">
-              <div>
-                <strong>8+</strong>
-                <span>ans d’expertise</span>
-              </div>
-              <div>
-                <strong>4.9/5</strong>
-                <span>avis clients</span>
-              </div>
-              <div>
-                <strong>3000+</strong>
-                <span>visites réussies</span>
-              </div>
-            </div>
-          </div>
+      <section class="stats-band">
+        <div class="container stats-grid">
+          <div><strong>18+</strong><span>prestations</span></div>
+          <div><strong>4.9/5</strong><span>satisfaction</span></div>
+          <div><strong>7 jours</strong><span>sur 7</span></div>
+          <div><strong>45 min</strong><span>moyenne de soin</span></div>
         </div>
       </section>
 
-      <section class="section services-section" id="services">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow accent">Nos services</span>
-            <h2>Des soins sur mesure pour chaque moment</h2>
+      <section id="prestations" class="prestations">
+        <div class="container section-head">
+          <span class="eyebrow">Prestations</span>
+          <h2>Ce qui fait la différence.</h2>
+        </div>
+        <div class="container cards-grid">
+          <article class="info-card"><h3>Coiffure</h3><p>Coupe, brushing et finitions personnalisées selon votre style.</p><strong>180 MAD</strong></article>
+          <article class="info-card"><h3>Beauté des mains</h3><p>Manucure, pose gel et soin des cuticules pour une finition nette.</p><strong>120 MAD</strong></article>
+          <article class="info-card"><h3>Soin visage</h3><p>Hydratation, nettoyage et sérum pour un éclat immédiat.</p><strong>200 MAD</strong></article>
+          <article class="info-card"><h3>Bridal</h3><p>Préparation complète pour un jour spécial et une belle présence.</p><strong>450 MAD</strong></article>
+        </div>
+      </section>
+
+      <section class="gallery" id="galerie">
+        <div class="container section-head">
+          <span class="eyebrow">Galerie</span>
+          <h2>Des finitions qui parlent d’elles-mêmes.</h2>
+        </div>
+        <div class="container gallery-grid">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=70" alt="Coiffure salon" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=70" alt="Soin visage salon" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=70" alt="Beauté salon" loading="lazy" />
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-grid">
+          <div class="info-copy">
+            <span class="eyebrow">À propos</span>
+            <h2>Une expérience beauté soignée et naturelle.</h2>
+            <p>Chez Rose Atelier, chaque prestation est pensée pour vous faire sentir mieux, plus belle et plus confiante dans votre quotidien.</p>
           </div>
-
-          <div class="services-grid">
-            <article class="service-card reveal">
-              <div class="icon-wrap">01</div>
-              <h3>Coiffure moderne</h3>
-              <p>Coupe, brushing, coloration et finition personnalisée selon votre style.</p>
-              <span>À partir de 180 MAD</span>
-            </article>
-
-            <article class="service-card reveal">
-              <div class="icon-wrap">02</div>
-              <h3>Soins du visage</h3>
-              <p>Nettoyage profond, hydratation et éclat pour une peau douce et lumineuse.</p>
-              <span>À partir de 320 MAD</span>
-            </article>
-
-            <article class="service-card reveal">
-              <div class="icon-wrap">03</div>
-              <h3>Manucure & pedicure</h3>
-              <p>Pose de vernis, soins des ongles et finition élégante pour un look impeccable.</p>
-              <span>À partir de 220 MAD</span>
-            </article>
-
-            <article class="service-card reveal">
-              <div class="icon-wrap">04</div>
-              <h3>Beauté des cils</h3>
-              <p>Extension ou rehaussement pour un regard plus ouvert et une sensation premium.</p>
-              <span>À partir de 400 MAD</span>
-            </article>
+          <div class="features">
+            <div><strong>Matériaux doux</strong><span>Des produits choisis pour la qualité et le confort.</span></div>
+            <div><strong>Ambiance élégante</strong><span>Un cadre apaisant et accueillant pour se détendre.</span></div>
+            <div><strong>Service discret</strong><span>Une attention personnalisée à chaque instant.</span></div>
           </div>
         </div>
       </section>
 
-      <section class="section gallery-section" id="gallery">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow accent">Galerie</span>
-            <h2>Avant / après et finitions inspirantes</h2>
+      <section class="contact" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <span class="eyebrow">Réservation</span>
+            <h2>Choisissez votre moment de soin.</h2>
           </div>
-
-          <div class="gallery-grid">
-            <button class="gallery-item reveal" type="button" data-image="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80" aria-label="Voir l’image 1">
-              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80" alt="Femme devant un miroir après un soin beauté" loading="lazy" width="900" height="1200" />
-            </button>
-            <button class="gallery-item reveal" type="button" data-image="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" aria-label="Voir l’image 2">
-              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Client en coiffure avec coupe élégante" loading="lazy" width="900" height="1200" />
-            </button>
-            <button class="gallery-item reveal" type="button" data-image="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80" aria-label="Voir l’image 3">
-              <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=900&q=80" alt="Main féminine avec manucure élégante" loading="lazy" width="900" height="1200" />
-            </button>
-            <button class="gallery-item reveal" type="button" data-image="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80" aria-label="Voir l’image 4">
-              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80" alt="Beauté et éclat du visage après soin" loading="lazy" width="900" height="1200" />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="section pricing-section" id="tarifs">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow accent">Tarifs</span>
-            <h2>Des offres simples et transparentes</h2>
-          </div>
-
-          <div class="pricing-grid">
-            <article class="price-card reveal">
-              <span class="plan">Essentiel</span>
-              <h3>179 MAD</h3>
-              <p>Pour un soin rapide, élégant et lumineux.</p>
-              <ul>
-                <li>Nettoyage visage</li>
-                <li>Hydratation</li>
-                <li>Finition beauté</li>
-              </ul>
-              <a class="btn btn-outline" href="https://wa.me/212681940627?text=Bonjour%20je%20souhaite%20prendre%20un%20soin%20Essentiel" target="_blank" rel="noopener noreferrer">Choisir</a>
-            </article>
-
-            <article class="price-card featured reveal">
-              <span class="plan">Signature</span>
-              <h3>420 MAD</h3>
-              <p>La formule idéale pour un rafraîchissement complet.</p>
-              <ul>
-                <li>Coiffure + soin visage</li>
-                <li>Massage doux</li>
-                <li>Produit premium</li>
-              </ul>
-              <a class="btn btn-primary" href="https://wa.me/212681940627?text=Bonjour%20je%20souhaite%20prendre%20un%20soin%20Signature" target="_blank" rel="noopener noreferrer">Choisir</a>
-            </article>
-
-            <article class="price-card reveal">
-              <span class="plan">Luxe</span>
-              <h3>680 MAD</h3>
-              <p>Un moment beauté complet pour se faire chouchouter.</p>
-              <ul>
-                <li>Brushing & soin visage</li>
-                <li>Manucure</li>
-                <li>Consultation beauté</li>
-              </ul>
-              <a class="btn btn-outline" href="https://wa.me/212681940627?text=Bonjour%20je%20souhaite%20prendre%20un%20soin%20Luxe" target="_blank" rel="noopener noreferrer">Choisir</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section testimonials-section">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow accent">Témoignages</span>
-            <h2>Ce que nos clientes disent de leur expérience</h2>
-          </div>
-
-          <div class="testimonial-slider reveal">
-            <button class="slider-btn prev" type="button" aria-label="Précédent">‹</button>
-            <div class="testimonial-track">
-              <article class="testimonial active">
-                <p>“Un accueil chaleureux, une ambiance douce et un résultat qui fait vraiment la différence. Je suis revenue plusieurs fois.”</p>
-                <footer>
-                  <strong>[REPLACE: cliente réelle]</strong>
-                  <span>Clientèle régulière</span>
-                </footer>
-              </article>
-
-              <article class="testimonial">
-                <p>“Le soin visage a totalement changé mon teint. Le service est impeccable et l’équipe très attentive.”</p>
-                <footer>
-                  <strong>[REPLACE: cliente réelle]</strong>
-                  <span>Clientèle régulière</span>
-                </footer>
-              </article>
-
-              <article class="testimonial">
-                <p>“Le salon est beau, propre et très professionnel. J’ai adoré le résultat de ma coupe et de ma coloration.”</p>
-                <footer>
-                  <strong>[REPLACE: cliente réelle]</strong>
-                  <span>Clientèle régulière</span>
-                </footer>
-              </article>
-            </div>
-            <button class="slider-btn next" type="button" aria-label="Suivant">›</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact-section" id="contact">
-        <div class="container reservation-grid">
-          <div class="reservation-card reveal">
-            <span class="eyebrow accent">Réservation</span>
-            <h2>Planifiez votre prochain moment beauté</h2>
-            <p>Envoyez-nous un message pour réserver un soin, demander un devis ou organiser une visite.</p>
-            <a class="btn btn-primary" href="https://wa.me/212681940627?text=Bonjour%20je%20souhaite%20prendre%20un%20rendez-vous%20au%20salon" target="_blank" rel="noopener noreferrer">Réserver par WhatsApp</a>
-          </div>
-
-          <div class="info-card reveal">
-            <h3>Informations</h3>
-            <ul>
-              <li><strong>Adresse:</strong> [REPLACE: Rue ... / Fès]</li>
-              <li><strong>Horaires:</strong> Lun-Sam, 9h - 19h</li>
-              <li><strong>Téléphone:</strong> +212 681 940 627</li>
-              <li><strong>Email:</strong> [REPLACE: hello@lumierestudio.ma]</li>
-            </ul>
-          </div>
+          <form class="booking-form" action="https://wa.me/212600000000" method="get" target="_blank" rel="noopener noreferrer">
+            <div class="field"><label>Nom</label><input type="text" name="nom" placeholder="Votre nom" /></div>
+            <div class="field"><label>Prestation</label><input type="text" name="prestation" placeholder="Coiffure, soin..." /></div>
+            <div class="field"><label>Date</label><input type="date" name="date" /></div>
+            <div class="field"><label>Heure</label><input type="time" name="heure" /></div>
+            <button type="submit" class="action primary">Réserver</button>
+          </form>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="demo-footer">
       <div class="container footer-wrap">
-        <p>© <span id="year"></span> Lumière Studio</p>
-        <div class="footer-links">
-          <a href="#about">À propos</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <p>© 2026 Rose Atelier</p>
+        <a href="../../index.html">Retour au portfolio</a>
       </div>
     </footer>
-
-    <div class="lightbox" aria-hidden="true">
-      <button class="lightbox-close" type="button" aria-label="Fermer">×</button>
-      <img src="" alt="Agrandissement de la galerie" />
-    </div>
 
     <script src="script.js"></script>
   </body>
